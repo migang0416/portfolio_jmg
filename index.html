@@ -259,7 +259,7 @@ const PROJECTS = [
   },
   {
     title: '루키, 가족이 되는 날',
-    category: '기타',   // AI애니메이션 — 템플릿 카테고리 5종 중 '기타'로 분류
+    category: '3D 애니메이션',
     tool: 'ChatGPT, Gemini, Flow, Grok',
     description: 'AI 애니메이션으로 제작한 가족 이야기.',
     youtube: 'https://youtu.be/ivu1Q_Qltqw',
@@ -274,15 +274,6 @@ const PROJECTS = [
     youtube: 'https://youtu.be/SosXnPWb1gc',
     planImages: [ph('캐릭터 기획안 1'), ph('캐릭터 기획안 2'), ph('캐릭터 기획안 3')],
     boardImages: [ph('콘티 씬1','11151b','3ddc84'), ph('콘티 씬2','11151b','3ddc84')],
-  },
-  {
-    title: '인터랙티브 전시 프로토타입',
-    category: '기타',
-    tool: 'Unity',
-    description: '관람객의 움직임에 반응하는 미디어아트 전시 프로토타입.',
-    youtube: 'https://youtu.be/Y-rmzh0PI3c',
-    planImages: [ph('기획안 1'), ph('기획안 2')],
-    boardImages: [ph('콘티 1','11151b','3ddc84'), ph('콘티 2','11151b','3ddc84')],
   },
 ];
 
@@ -305,7 +296,7 @@ function gradTile(w,h,c1,c2){
   return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
 }
 
-const CATS = ['다큐멘터리','AI광고','모션그래픽','Cinema 4D','기타'];
+const CATS = ['다큐멘터리','AI광고','After Effects','Cinema 4D','모션그래픽','3D 애니메이션'];
 function escapeHtml(s){ return (s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function extractYoutubeId(input){
   input = (input||'').trim();
